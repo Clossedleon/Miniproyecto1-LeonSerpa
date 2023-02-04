@@ -7,10 +7,12 @@ let width = carrusel.scrollWidth
 let max
 
 BD.onclick = function () {
+    width = carrusel.scrollWidth
     carruselItems.scrollLeft = carruselItems.scrollLeft + width;
 }
 
 BI.onclick = function () {
+    width = carrusel.scrollWidth
     carruselItems.scrollLeft = carruselItems.scrollLeft - width;
 }
 
@@ -18,6 +20,7 @@ let intervalo = null;
 
 const start = () => {
     intervalo = setInterval(function (params) {
+        width = carrusel.scrollWidth
         carruselItems.scrollLeft = carruselItems.scrollLeft + width;
     }, 5000)
 }
