@@ -24,7 +24,6 @@ nav {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
     line-height: 19px;
     color: #282A63;
 }
@@ -132,10 +131,10 @@ a {
 
 
 #Experience{
-    width: 100vw;
+    margin:10px;
 }
 
-#TExperiencia {
+.TDiv {
     height: 10vh;
     display: flex;
     align-items: center;
@@ -143,13 +142,12 @@ a {
 
 }
 
-#T2 {
-    font-size: 25px;
+.T {
+    font-size: 50px;
 }
 
 #Proyectos {
     display: flex;
-    height: 150vh;
     width: 100%;
     flex-direction: column;
     justify-content: space-between;
@@ -163,7 +161,7 @@ a {
     justify-content:space-around;
 }
 
-.info {
+.infoE {
     width: 40vw;
     padding-right: 10px;
     padding-left: 10px;
@@ -180,6 +178,60 @@ a {
     width: 100%;
     object-fit: cover;
 }
+
+
+#AboutMe {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+#TAboutMe {
+    font-size: 50px;
+}
+
+.Perfil {
+    height: 50vh;
+    border-radius: 50%;
+    border: 50px black;
+}
+
+.Perfil img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit:cover;
+}
+
+.infoA {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.infoA h1 {
+    font-size: 40px;
+    padding: 10px 0;
+    line-height: 45px;
+
+}
+
+.infoA h2 {
+    font-size: 20px;
+    padding-top: 25px;
+
+}
+
+.infoA p {
+    font-size: 15px;
+
+}
+
 /* Tablet */
 @media (min-width: 768px) {
 
