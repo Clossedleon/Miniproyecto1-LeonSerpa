@@ -47,10 +47,11 @@ nav {
 
 }
 
-img {
+#icono img {
     width: 100%;
     height: 100%;
     border-radius: 50px;
+    object-fit: cover;
 }
 
 #menu {
@@ -77,6 +78,52 @@ a {
     text-align: center;
 }
 
+#Carrusel {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+
+}
+
+#CarruselItems {
+    display: flex;
+    overflow-x: hidden;
+
+}
+.Carrusel_Item {
+    min-width: 100vw;
+    min-height: 100vh;
+}
+.Carrusel_Item img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+}
+
+.Boton {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    cursor:pointer;
+}
+
+.Boton img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+#Botones {
+    display:flex;
+    height:100vh;
+    width: 100vw;
+    align-items: center;
+    position:absolute;
+    justify-content: space-between;
+    padding: 0 30px;
+}
 
 /* Tablet */
 @media (min-width: 768px) {
