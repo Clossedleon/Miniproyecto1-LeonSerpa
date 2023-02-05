@@ -253,8 +253,13 @@ a {
 .bloque{
     display: flex;
     flex-direction: column;
+    width: 50px;
     align-items: center;
     justify-content: center;
+}
+
+.bloque h3{
+    font-size: 14px;
 }
 .barra{
     display: flex;
@@ -273,8 +278,82 @@ a {
     justify-content: end;
 }
 
+#ContactMe {
+    margin-top: 40px;
+}
+
+#ContactMe p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#RyF{
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    width: 80vw;
+    margin-bottom: 40px;
+}
+
+form input{
+    margin-bottom: 15px;
+}
+#Message{
+    margin-bottom: 10px;
+}
+
+#Send {
+    cursor:pointer;
+}
 
 
+#Redes{
+    display:flex;
+    flex-direction: row;
+    width: 50vw;
+    align-items: center;
+    justify-content:space-around;
+
+}
+.red {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.red img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    
+}
+.red img:hover{
+    scale:1.2;
+    transition: all 1s;
+}
+
+#Social {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+#tlf {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+#tlf a {
+    font-size: 15px;
+    margin-left: 10px;
+    text-decoration: underline;
+}
 /* Tablet */
 @media (min-width: 768px) {
 
