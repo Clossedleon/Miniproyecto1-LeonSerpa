@@ -96,7 +96,7 @@ a {
 }
 
 #Carrusel {
-    height: 50vh;
+    max-height: 50vh;
     width: 100vw;
     margin: 0;
     padding: 0;
@@ -106,7 +106,7 @@ a {
 }
 
 #CarruselItems {
-
+    height:50vh;
     width: 100vw;
     display: flex;
     overflow-x: hidden;
@@ -241,9 +241,8 @@ a {
 .Perfil {
     height: 50vh;
     border-radius: 50%;
-    border: 50px black;
+    border:5px solid rgb(175, 153, 29);
     margin-top: 50px;
-
 }
 
 .Perfil img {
@@ -543,6 +542,7 @@ form textarea{
         font-size: 14px;
         line-height: 18px;
     }
+
     .infoE{
         font-size: 19px;
     }
@@ -571,7 +571,7 @@ form textarea{
 
 /* Desktop */
 @media (min-width: 1024px) {
-    
+
     #T1 {
             font-size: 30px;
         }
@@ -593,19 +593,23 @@ form textarea{
     }
 
     #Carrusel{
-        height: 90vh;
+        max-height: 90vh;
     }
 
     #CarruselItems{
-        max-height: 90vh;
+        height: 90vh;
     }
+
+
+    #Botones {
+        height: 90vh;
+    }
+
 
     .proyecto{
         margin: 60px 0;
     }
-    #Botones{
-        height: 90vh;
-    }
+
     .imagen {
         height: 100%;
     }
