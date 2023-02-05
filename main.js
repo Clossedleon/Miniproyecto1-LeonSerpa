@@ -53,12 +53,18 @@ function insertarBarras() {
         </div>
         `
         },
-            done = true
+            done = true,
+
         ) 
     };
 }
 
+function opacidad() {
+    document.getElementById("barras").style.opacity = 1
+}
+
 SkillsM.addEventListener("mouseover", insertarBarras)
+Barras.addEventListener("mouseover", opacidad)
 
 /************* Contact Me *************/
 
