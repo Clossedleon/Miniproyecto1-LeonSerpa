@@ -225,8 +225,9 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(152, 201, 204);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmUFH-_HDprbKcmMw-VZnFQx787XjL8k5vYG1PJ1PwL0hlfPT-ds2Ob7VeAXZgEFhc53o&usqp=CAU;);
     padding-bottom: 60px;
+    background-size: cover;
 
 
 }
@@ -267,6 +268,7 @@ a {
     margin: 20px 0;
 }
 
+
 #AboutMe h1 {
     font-size: 30px;
     margin: 40px 0 20px 0;
@@ -301,25 +303,34 @@ a {
 
 }
 
+#FondoFino{
+    background: url(https://static.vecteezy.com/system/resources/previews/002/294/900/non_2x/light-blue-technology-background-hi-tech-digital-and-security-concept-design-free-space-for-text-in-put-illustration-vector.jpg);
+    background-size: cover;
+}
+
 #ISkills{
-    margin: 0 0 40px 0;
+    margin: 50px 0 40px 0;
     display:flex;
     align-items: center;
     justify-content: center;
+
+
 }
 
 #ISkills p {
-    font-size: 20px;
+    font-size: 26px;
+    
 }
 
 #barras {
-    width: 95vw;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding-bottom: 5px;
     opacity: 0;
     transition: all 1s;
+
 }
 
 
@@ -590,7 +601,7 @@ form textarea{
 
 }
     .separador{
-        width: 2px;
+        width: 3px;
         height:100%;
         background-color: #282A63;
     }

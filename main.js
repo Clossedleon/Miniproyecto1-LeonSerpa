@@ -18,11 +18,20 @@ BI.onclick = function () {
     carruselItems.scrollLeft = carruselItems.scrollLeft - width;
 }
 
-let intervalo = null;
+console.log(carrusel.clientWidth)
 
 setInterval(() => {
-    document.getElementById("Carrusel").scrollWidth += carrusel.clientWidth
-}, 5);
+    width = carrusel.scrollWidth
+    carruselItems.scrollLeft = carruselItems.scrollLeft + width;
+
+    if (carruselItems.scrollLeft >= 3 * width) {
+        carruselItems.scrollLeft = 0;
+    }
+    console.log(width)
+    console.log(carruselItems.scrollLeft)
+
+}, 5000);
+
 
 /************* Skills *************/
 
