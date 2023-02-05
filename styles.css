@@ -42,6 +42,7 @@ nav {
     justify-content: center;
     align-items: center;
     height: 61px;
+    max-width: 30vw;
 }
 
 #T1 {
@@ -70,7 +71,7 @@ nav {
     display:flex;
     flex-direction:row;
     justify-self:right;
-    
+    max-width: 70vw;
 }
 
 .menu_item {
@@ -117,6 +118,7 @@ a {
 }
 .Carrusel_Item {
     min-width: 100vw;
+    height: 50vh;
 }
 .Carrusel_Item img{
     height: 100%;
