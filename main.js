@@ -20,10 +20,14 @@ BI.onclick = function () {
 
 let intervalo = null;
 
+setInterval(() => {
+    document.getElementById("Carrusel").scrollWidth += carrusel.clientWidth
+}, 5);
+
 /************* Skills *************/
 
 const Barras = document.getElementById("barras")
-const SkillsMouse = document.getElementById("Skills")
+const SkillsM = document.getElementById("Skills")
 
 let skills = [
     { label: "Python", value: 75 },
@@ -49,12 +53,12 @@ function insertarBarras() {
         </div>
         `
         },
-        done = true
+            done = true
         ) 
     };
 }
 
-SkillsMouse.addEventListener("mouseover", insertarBarras)
+SkillsM.addEventListener("mouseover", insertarBarras)
 
 /************* Contact Me *************/
 
