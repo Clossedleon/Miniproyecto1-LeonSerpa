@@ -117,11 +117,14 @@ a {
     min-width: 100vw;
 
 }
+
+
 .Carrusel_Item img{
     height: 100%;
     width: 100%;
     object-fit:cover;
 }
+
 
 .Boton {
     border-radius: 50%;
@@ -496,12 +499,17 @@ form textarea{
         max-width: 100vw;
     }
     .menu_item {
-        font-size: 10px;
+        font-size: 9px;
+    }
+    #Carrusel{
+        height: 30vh
     }
     .Carrusel_Item {
-        height: 50vh;
+        height: 30vh;
     }
-    
+    #Botones{
+        height: 30vh;
+    }
 
     .infoE {
         font-size: 12px;
