@@ -6,7 +6,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-
+    transition: all 1s;
 }
 
 body {
@@ -226,6 +226,7 @@ a {
     align-items: center;
     justify-content: center;
     background-color: rgb(152, 201, 204);
+    padding-bottom: 60px;
 
 
 }
@@ -257,25 +258,36 @@ a {
     padding: 20px 40px;
     text-align: center;
 }
+.sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+    margin: 20px 0;
+}
 
-.infoA h1 {
-    font-size: 40px;
-    padding: 10px 0;
+#AboutMe h1 {
+    font-size: 30px;
+    margin: 40px 0 20px 0;
     line-height: 45px;
+    text-align: center;
 
 }
 
 .infoA h2 {
     color:#282A63;
     font-size: 20px;
-    padding-top: 25px;
+    margin-bottom: 20px;
+
+
 
 }
 
 .infoA p {
     color: black;
     font-size: 19px;
-    margin-bottom: 30px;
+    margin: 10px 0;
 
 }
 
@@ -285,7 +297,6 @@ a {
     justify-content: center;
     margin: 5px;
     flex-direction: column;
-    cursor:pointer;
     transition: all 2s;
 
 }
@@ -319,6 +330,7 @@ a {
     width: 50px;
     align-items: center;
     justify-content: center;
+    transition: all 3s;
 }
 
 .bloque h3{
@@ -331,10 +343,7 @@ a {
     width: 50px;
     background-color: grey;
     border-radius: 5px;
-    transition: 1s;
 }
-
-
 
 
 .progreso{
@@ -342,8 +351,10 @@ a {
     border-radius: 5px;
     height: 0;
     justify-content: end;
-    transition: all 2s;
+    transition: all 5s;
 }
+
+
 
 
 
@@ -380,6 +391,7 @@ form textarea{
     columns: 10;
     width: 100%;
     resize: none;
+    padding: 20px;
 }
 
 #Message{
@@ -390,6 +402,10 @@ form textarea{
     cursor:pointer;
     background-color: rgb(41, 41, 100);
     color: white;
+}
+
+#Send:hover{
+    background-color: rgb(63, 63, 150);
 }
 
 
@@ -430,6 +446,7 @@ form textarea{
     align-content: center;
     align-items: center;
     margin: 30px 0;
+    justify-content: center;
 
 }
 #tlf a {
@@ -478,6 +495,10 @@ form textarea{
         font-size: 18px;
     }
 
+    form textarea {
+        max-width: 500px;
+    }
+
     #ContactMe p{
         font-size: 18px;
     }
@@ -490,9 +511,6 @@ form textarea{
 /* Desktop */
 @media (min-width: 1024px) {
     
-    #menu {
-            background-color: yellow;
-        }
     #T1 {
             font-size: 30px;
         }
@@ -512,4 +530,88 @@ form textarea{
     #menu{
         margin-right: 10%;
     }
+
+    #Carrusel{
+        height: 90vh;
+    }
+
+    #CarruselItems{
+        max-height: 90vh;
+    }
+
+    .proyecto{
+        margin: 60px 0;
+    }
+    #Botones{
+        height: 90vh;
+    }
+    .imagen {
+        height: 100%;
+    }
+
+    #AboutMe h1{
+        font-size: 40px;
+        margin: 40px 0;
+    }
+    .infoA {
+        width: 100%;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 70vh;
+        
+    }
+    
+    .sec {
+        
+        display: flex;
+        flex-direction: column;
+        width: 30vw;
+        height: 100%;
+        justify-items:center;
+        justify-content:flex-start;
+        margin-top: 50px;
+
+    
+    }
+
+    .infoA p{
+        width:80%;
+
+        font-size: 22px;
+        line-height: 27px;
+        text-align: justify;
+    }
+    .infoA h2 {
+        width: 80%;
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+
 }
+    .separador{
+        width: 2px;
+        height:100%;
+        background-color: #282A63;
+    }
+
+    #Skills{
+        margin-bottom: 60px;
+    }
+
+    .bloque h3 {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .barra{
+        width: 60px;
+    }
+
+    form textarea{
+        max-width: 500px;
+    }
+    #Redes{
+        width: 30vw;
+    }
+}   

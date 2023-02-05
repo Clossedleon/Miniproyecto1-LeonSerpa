@@ -28,6 +28,7 @@ setInterval(() => {
 
 const Barras = document.getElementById("barras")
 const SkillsM = document.getElementById("Skills")
+const skillsdiv = document.getElementById("TDivSkill")
 
 let skills = [
     { label: "Python", value: 75 },
@@ -47,11 +48,12 @@ function insertarBarras() {
         Barras.innerHTML += `
         <div class="bloque">
             <div class="barra">
-                <div class="progreso" id="${item.label}" style="height:${item.value}%"></div>
+                <div class="progreso" id="${item.label}"></div>
             </div>
             <h3>${item.label}</h3>
         </div>
         `
+            document.getElementById(item.label).style.height += `${item.value}%`
         },
             done = true,
 
@@ -63,7 +65,7 @@ function opacidad() {
     document.getElementById("barras").style.opacity = 1
 }
 
-SkillsM.addEventListener("mouseover", insertarBarras)
+skillsdiv.addEventListener("mouseover", insertarBarras)
 Barras.addEventListener("mouseover", opacidad)
 
 /************* Contact Me *************/
