@@ -136,6 +136,7 @@ a {
 
 .TDiv {
     height: 10vh;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -231,6 +232,48 @@ a {
     font-size: 15px;
 
 }
+
+#Skills{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    flex-direction: column;
+    cursor:pointer;
+}
+
+#barras {
+    width: 95vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 5px;
+}
+
+.bloque{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.barra{
+    display: flex;
+    flex-direction: column-reverse;
+    height: 60vh;
+    width: 50px;
+    background-color: grey;
+    border-radius: 5px;
+
+}
+
+.progreso{
+    background-color: green;
+    border-radius: 5px;
+    height: 0;
+    justify-content: end;
+}
+
+
 
 /* Tablet */
 @media (min-width: 768px) {
