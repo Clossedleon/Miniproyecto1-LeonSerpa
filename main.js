@@ -1,3 +1,5 @@
+/************* Hero *************/
+
 const carruselItems = document.getElementById("CarruselItems")
 const BD = document.getElementById("BotonDerecho")
 const BI = document.getElementById("BotonIzquierdo")
@@ -18,6 +20,8 @@ BI.onclick = function () {
 
 let intervalo = null;
 
+/************* Skills *************/
+
 const Barras = document.getElementById("barras")
 const SkillsMouse = document.getElementById("Skills")
 
@@ -28,7 +32,7 @@ let skills = [
     { label: "Assembler", value: 40 },
     { label: "HTML", value: 80 },
     { label: "CSS", value: 60 },
-    { label: "Javascript", value: 30 },
+    { label: "Javascript", value: 20 },
 ]
 let done = false
 
@@ -50,4 +54,46 @@ function insertarBarras() {
     };
 }
 
-SkillsMouse.addEventListener("click", insertarBarras)
+SkillsMouse.addEventListener("mouseover", insertarBarras)
+
+/************* Contact Me *************/
+
+const send = document.getElementById("Send")
+
+send.onclick = () => {
+    let name = document.getElementById("Name").value
+    let email = document.getElementById("Email").value
+    let msg = document.getElementById("Message").value
+
+    let validEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+    if (name != "") {
+        if (email != "") {
+            if(email.match(validEmail)) {
+                if (msg != "") {
+
+                    alert(`
+                    Su solicitud ha sido enviada con éxito!
+
+                    Nombre: ${name}
+                    Email: ${email}
+                    Mensaje: ${msg}
+                    `)
+                    document.getElementById("Message").value = ""
+                    document.getElementById("Email").value = ""
+                    document.getElementById("Name").value = ""
+                } else {
+                    alert(`Error, por favor agregue un mensaje al formulario`)
+                    }
+            } else {
+                alert("Error, por favor ingrese un email válido")
+                
+            }
+        } else {
+                alert(`Error, por favor ingrese un email`)
+            }
+    } else {
+                alert(`Error, por favor ingrese un nombre`)
+            }
+
+}
